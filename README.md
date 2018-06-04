@@ -63,21 +63,21 @@ getit
 Output of the above calling:
 
 ```
-Query nucleotide:  TGT 
+Query nucleotide(s):  TGT 
 Return transcription and translation information! 
 > getit
    chr position_start position_end query_nucleotide query_codon query_codon_pos
-1 chr1        1419546      1419548              TGT         UGU             2_1
-2 chr1        1419546      1419548              TGT         UGU             1_3
-3 chr1        1419546      1419548              TGT         AAU             3_2
-4 chr1        1419546      1419548              TGT         AAU             3_2
-5 chr1        1419546      1419548              TGT         UGU             1_3
+1 chr1        1419546      1419548              TGT         GUC             0_2
+2 chr1        1419546      1419548              TGT     AAU_GUC             3_2
+3 chr1        1419546      1419548              TGT     AAU_GUC             3_2
+4 chr1        1419546      1419548              TGT     AAU_GUC             3_2
+5 chr1        1419546      1419548              TGT     AAU_GUC             3_2
   query_aa  source type start_position end_position score strand frame
-1        C  HAVANA  CDS        1419545      1419549     .      -     2
-2        C  HAVANA  CDS        1419237      1419549     .      -     1
-3        N ENSEMBL  CDS        1419103      1419549     .      -     0
-4        N  HAVANA  CDS        1419103      1419549     .      -     0
-5        C  HAVANA  CDS        1419237      1419549     .      -     1
+1        V  HAVANA  CDS        1419545      1419549     .      -     2
+2      N_V  HAVANA  CDS        1419237      1419549     .      -     1
+3      N_V ENSEMBL  CDS        1419103      1419549     .      -     0
+4      N_V  HAVANA  CDS        1419103      1419549     .      -     0
+5      N_V  HAVANA  CDS        1419237      1419549     .      -     1
             gene_id     transcript_id      gene_type gene_name transcript_type
 1 ENSG00000235098.8 ENST00000520296.5 protein_coding   ANKRD65  protein_coding
 2 ENSG00000235098.8 ENST00000427211.3 protein_coding   ANKRD65  protein_coding
@@ -96,7 +96,6 @@ Return transcription and translation information!
 3        CCDS          CCDS55558.1
 4        CCDS          CCDS55558.1
 5        CCDS          CCDS57962.1
-
 ```
 
 
