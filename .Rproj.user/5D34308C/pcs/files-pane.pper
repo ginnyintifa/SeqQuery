@@ -1,0 +1,9 @@
+{
+    "path" : "~/SeqQuery",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
