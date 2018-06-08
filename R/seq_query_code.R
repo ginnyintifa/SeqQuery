@@ -121,7 +121,55 @@ get_translation = function(excerpts, mypos_start,mypos_end, myseq, dictionary)
 }
 
 
-### I need to try a few more times to make sure it is correct and add more function to it
+
+# ### I will build another function to track the changes on the protein 
+# 
+# get_mutation_result = function(translation_result, ref_nuc, alt_nuc)
+# {
+#   # if the altered nuc is of the same length as the ref_nuc 
+#   # I dont need to extract more nucleotides
+#   
+#   filter_result = translation_result %>%
+#     dplyr::filter(query_nucleotide == ref_nuc)
+#   
+#   if(nrow(filter_result)>0)
+#   {
+#     rbindlist(lapply(1:nrow(filter_result), function(x) {
+#       alt_nuc_rna = gsub("T","U",filter_result$alt_nuc[x])
+#       
+#       connect_codon = gsub("_","",filter_result$query_codon[x])
+#       
+#       two_pos = unlist(strsplit(filter_result$query_codon_pos[x], split = "_", fixed = T))
+#       
+#       
+#      num_codon = 1+lengths(regmatches(filter_result$query_codon[x], gregexpr("_", filter_result$query_codon[x])))
+#       
+#       sub_start = two_pos[1]
+#       sub_end = (num_codon-1)*3+two_pos[2]
+#       
+#    substr(connect_codon, sub_start, sub_end) <- alt_nuc_rna
+#       
+#    ### then translate the new codon and you are done.
+#    
+#    
+#       
+#    
+#    
+#     })
+#     
+#     
+#     
+#     
+#     
+#   }
+#   
+#   
+#   
+# }
+# 
+# 
+# 
+
 
 
 
